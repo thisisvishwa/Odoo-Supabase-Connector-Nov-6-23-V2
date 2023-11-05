@@ -1,0 +1,1 @@
+# Odoo-Supabase-Connector-Nov-6-23-V2

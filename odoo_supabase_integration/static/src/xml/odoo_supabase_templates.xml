@@ -1,0 +1,35 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Odoo-Supabase Integration Dashboard Template -->
+        <template id="odoo_supabase_integration_dashboard_template">
+            <div class="o_dashboard">
+                <h1>Odoo-Supabase Integration Dashboard</h1>
+                <div id="real_time_sync_status">
+                    <h2>Real-Time Synchronization Status</h2>
+                    <!-- Real-time synchronization status will be updated here -->
+                </div>
+                <div id="data_operations_status">
+                    <h2>Data Operations Status</h2>
+                    <!-- Data operations status will be updated here -->
+                </div>
+                <div id="extensibility_status">
+                    <h2>Extensibility Status</h2>
+                    <!-- Extensibility status will be updated here -->
+                </div>
+            </div>
+        </template>
+
+        <!-- Odoo-Supabase Integration Conflict Resolution Template -->
+        <template id="odoo_supabase_integration_conflict_resolution_template">
+            <div class="o_conflict_resolution">
+                <h1>Conflict Resolution</h1>
+                <div id="conflict_list">
+                    <!-- List of conflicts will be updated here -->
+                </div>
+            </div>
+        </template>
+    </data>
+</odoo>
+```

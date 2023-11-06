@@ -1,0 +1,56 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Odoo-Supabase Integration Menu -->
+        <menuitem id="menu_odoo_supabase_integration" name="Odoo-Supabase Integration" sequence="10" />
+
+        <!-- Odoo-Supabase Integration Action -->
+        <record id="action_odoo_supabase_integration" model="ir.actions.act_window">
+            <field name="name">Odoo-Supabase Integration</field>
+            <field name="res_model">odoo.supabase.integration</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p>
+                    Here you can manage the integration between Odoo and Supabase.
+                </p>
+            </field>
+        </record>
+
+        <!-- Odoo-Supabase Integration Menu Action -->
+        <menuitem id="menu_action_odoo_supabase_integration" name="Odoo-Supabase Integration" parent="menu_odoo_supabase_integration" action="action_odoo_supabase_integration" sequence="10"/>
+
+        <!-- Odoo-Supabase Integration Tree View -->
+        <record id="view_odoo_supabase_integration_tree" model="ir.ui.view">
+            <field name="name">odoo.supabase.integration.tree</field>
+            <field name="model">odoo.supabase.integration</field>
+            <field name="arch" type="xml">
+                <tree string="Odoo-Supabase Integration">
+                    <field name="name"/>
+                    <field name="supabase_table"/>
+                    <field name="odoo_model"/>
+                    <field name="last_sync"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Odoo-Supabase Integration Form View -->
+        <record id="view_odoo_supabase_integration_form" model="ir.ui.view">
+            <field name="name">odoo.supabase.integration.form</field>
+            <field name="model">odoo.supabase.integration</field>
+            <field name="arch" type="xml">
+                <form string="Odoo-Supabase Integration">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="supabase_table"/>
+                            <field name="odoo_model"/>
+                            <field name="last_sync"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
+```

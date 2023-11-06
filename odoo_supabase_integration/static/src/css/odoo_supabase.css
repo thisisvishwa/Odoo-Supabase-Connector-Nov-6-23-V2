@@ -1,0 +1,51 @@
+/* odoo_supabase.css */
+
+/* General styles for the Odoo-Supabase Integration Module */
+
+.odoo-supabase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.odoo-supabase-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.odoo-supabase-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.odoo-supabase-table th,
+.odoo-supabase-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.odoo-supabase-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.odoo-supabase-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.odoo-supabase-button:hover {
+    background-color: #45a049;
+}
+
+.odoo-supabase-error {
+    color: red;
+    font-weight: bold;
+}
